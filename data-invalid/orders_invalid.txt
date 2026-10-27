@@ -1,0 +1,10 @@
+# Exemples de données invalides (commandes).
+# Ces commandes supposent que les produits et clients normaux sont déjà importés.
+ORD100;C001;P001;2;2026-06-01
+ORD100;C002;P002;1;2026-06-02
+ORD101;C999;P001;1;2026-06-01
+ORD102;C001;P999;1;2026-06-01
+ORD103;C001;P001;0;2026-06-01
+ORD104;C001;P001;-1;2026-06-01
+ORD105;C001;P001;1;2026-13-40
+ORD106;badcustomer;P001;1;2026-06-01

@@ -1,0 +1,9 @@
+# PyMart - Fichier des produits
+# Format : product_id;name;price;quantity;type
+# type : physical (par défaut) ou digital
+P001;Laptop Pro 15;999.99;10;physical
+P002;Wireless Mouse;19.99;50;physical
+P003;USB-C Cable;12.50;100;physical
+P004;Desk Lamp;29.99;25;physical
+P005;Mechanical Keyboard;89.90;15;physical
+P006;Ebook Python;24.99;0;digital

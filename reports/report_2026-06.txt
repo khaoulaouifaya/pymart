@@ -1,0 +1,17 @@
+Rapport mensuel - 2026-06
+
+Mois concerné : 2026-06 (30 jours)
+Nombre total de commandes : 5
+Chiffre d'affaires total : 2127.45 €
+
+Produits les plus vendus :
+  - P003 (USB-C Cable) : 5 vendu(s)
+  - P001 (Laptop Pro 15) : 2 vendu(s)
+  - P002 (Wireless Mouse) : 2 vendu(s)
+  - P006 (Ebook Python) : 1 vendu(s)
+
+Résumé des ventes :
+  - P001 (Laptop Pro 15) : 2 vendu(s) pour 1999.98 €
+  - P002 (Wireless Mouse) : 2 vendu(s) pour 39.98 €
+  - P003 (USB-C Cable) : 5 vendu(s) pour 62.50 €
+  - P006 (Ebook Python) : 1 vendu(s) pour 24.99 €

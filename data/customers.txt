@@ -1,0 +1,7 @@
+# PyMart - Fichier des clients
+# Format : customer_id;name;email
+C001;Alice Martin;alice.martin@example.com
+C002;Bruno Petit;bruno.petit@example.com
+C003;Chloé Dubois;chloe.dubois@example.com
+C004;David Leroy;david.leroy@example.com
+C005;Emma Rousseau;emma.rousseau@example.com

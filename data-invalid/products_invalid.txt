@@ -1,0 +1,10 @@
+# Exemples de données invalides (produits) pour tester la gestion des erreurs.
+# Chaque ligne invalide est signalée sans bloquer les autres lignes.
+P001;Bon produit;10.00;5;physical
+P001;Produit en double;10.00;5;physical
+P2;Identifiant mal formé;10.00;5;physical
+P010;Prix négatif;-5.00;5;physical
+P011;Prix invalide;abc;5;physical
+P012;Quantité négative;10.00;-2;physical
+P013;Colonnes manquantes;10.00
+P100|Mauvais séparateur corrigé|10.00|5|physical

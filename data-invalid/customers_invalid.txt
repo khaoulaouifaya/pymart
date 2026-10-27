@@ -1,0 +1,6 @@
+# Exemples de données invalides (clients).
+C001;Alice;alice@example.com
+C001;Client en double;alice2@example.com
+C2;Identifiant mal formé;x@example.com
+C100;E-mail invalide;pas-un-email
+C101;Colonnes manquantes

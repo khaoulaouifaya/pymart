@@ -1,0 +1,10 @@
+Rapport journalier - 2026-06-30
+
+Nombre de commandes : 3
+Quantités vendues : 7
+Total des ventes : 1087.48 €
+
+Produits vendus :
+  - P001 (Laptop Pro 15) : 1 vendu(s) pour 999.99 €
+  - P003 (USB-C Cable) : 5 vendu(s) pour 62.50 €
+  - P006 (Ebook Python) : 1 vendu(s) pour 24.99 €
