@@ -1,7 +1,7 @@
 # PyMart
 
 Application de gestion d'un magasin en ligne **en ligne de commande (CLI)**,
-réalisée dans le cadre d'un projet universitaire en Python.
+réalisée dans le cadre d'un projet de l'école en Python.
 
 Le programme utilise uniquement la **bibliothèque standard Python** : aucune
 dépendance externe, aucune base de données, aucune interface web.
