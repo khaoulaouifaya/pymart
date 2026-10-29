@@ -84,7 +84,7 @@ cd pymart-project
 Importer les données de démonstration :
 
 ```bash
-python -m pymart.cli import \
+python3 -m pymart.cli import \
   --products data/products.txt \
   --customers data/customers.txt \
   --orders data/orders.txt
@@ -100,22 +100,22 @@ Toutes les commandes se lancent **depuis la racine du projet**.
 
 ```bash
 # Aide générale
-python -m pymart.cli --help
+python3 -m pymart.cli --help
 
 # Importer les données
-python -m pymart.cli import --products data/products.txt --customers data/customers.txt --orders data/orders.txt
+python3 -m pymart.cli import --products data/products.txt --customers data/customers.txt --orders data/orders.txt
 
 # Créer une commande
-python -m pymart.cli order create --customer C001 --product P001 --quantity 2
+python3 -m pymart.cli order create --customer C001 --product P001 --quantity 2
 
 # Afficher les commandes
-python -m pymart.cli order list
+python3 -m pymart.cli order list
 
 # Rapport journalier
-python -m pymart.cli report --type daily --date 2026-06-30 --out reports/
+python3 -m pymart.cli report --type daily --date 2026-06-30 --out reports/
 
 # Rapport mensuel
-python -m pymart.cli report --type monthly --month 2026-06 --out reports/
+python3 -m pymart.cli report --type monthly --month 2026-06 --out reports/
 ```
 
 ### Format des fichiers d'import
@@ -181,10 +181,10 @@ Les rapports sont enregistrés dans le dossier indiqué par `--out`
 
 ```bash
 # Rapport journalier pour le 30 juin 2026
-python -m pymart.cli report --type daily --date 2026-06-30 --out reports/
+python3 -m pymart.cli report --type daily --date 2026-06-30 --out reports/
 
 # Rapport mensuel pour juin 2026
-python -m pymart.cli report --type monthly --month 2026-06 --out reports/
+python3 -m pymart.cli report --type monthly --month 2026-06 --out reports/
 ```
 
 Les fichiers produits sont :
@@ -202,7 +202,7 @@ donnent toujours exactement le même contenu.
 Depuis la racine du projet :
 
 ```bash
-python -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
 ```
 
 Les tests couvrent : les objets, le calcul des prix, l'héritage et le
@@ -225,13 +225,13 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 2. **Afficher l'aide** :
 
    ```bash
-   python -m pymart.cli --help
+   python3 -m pymart.cli --help
    ```
 
 3. **Importer les données** :
 
    ```bash
-   python -m pymart.cli import --products data/products.txt --customers data/customers.txt --orders data/orders.txt
+   python3 -m pymart.cli import --products data/products.txt --customers data/customers.txt --orders data/orders.txt
    ```
 
    → capture du message « Total des enregistrements ajoutés : 19 ».
@@ -239,7 +239,7 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 4. **Créer une commande** :
 
    ```bash
-   python -m pymart.cli order create --customer C001 --product P001 --quantity 2
+   python3 -m pymart.cli order create --customer C001 --product P001 --quantity 2
    ```
 
    → capture de la commande créée (identifiant `ORD009`).
@@ -247,13 +247,13 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 5. **Afficher les commandes** :
 
    ```bash
-   python -m pymart.cli order list
+   python3 -m pymart.cli order list
    ```
 
 6. **Tester la gestion des erreurs** (produit inconnu) :
 
    ```bash
-   python -m pymart.cli order create --customer C001 --product P999 --quantity 1
+   python3 -m pymart.cli order create --customer C001 --product P999 --quantity 1
    ```
 
    → capture du message « Erreur : Produit inconnu : P999 ».
@@ -261,19 +261,19 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 7. **Générer le rapport journalier** :
 
    ```bash
-   python -m pymart.cli report --type daily --date 2026-06-30 --out reports/
+   python3 -m pymart.cli report --type daily --date 2026-06-30 --out reports/
    ```
 
 8. **Générer le rapport mensuel** :
 
    ```bash
-   python -m pymart.cli report --type monthly --month 2026-06 --out reports/
+   python3 -m pymart.cli report --type monthly --month 2026-06 --out reports/
    ```
 
 9. **Montrer la persistance** : fermer le terminal, en rouvrir un, puis :
 
    ```bash
-   python -m pymart.cli order list
+   python3 -m pymart.cli order list
    ```
 
    → les données sont toujours là (fichier `data/pymart_store.json`).
@@ -281,7 +281,7 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 10. **Montrer les données invalides** :
 
     ```bash
-    python -m pymart.cli import --products data-invalid/products_invalid.txt --customers data-invalid/customers_invalid.txt --orders data-invalid/orders_invalid.txt
+    python3 -m pymart.cli import --products data-invalid/products_invalid.txt --customers data-invalid/customers_invalid.txt --orders data-invalid/orders_invalid.txt
     ```
 
     → capture des messages `[ERREUR]` ligne par ligne.
@@ -289,7 +289,7 @@ Suivre ces étapes dans l'ordre et réaliser une capture d'écran de chacune.
 11. **Lancer les tests** :
 
     ```bash
-    python -m unittest discover -s tests -v
+    python3 -m unittest discover -s tests -v
     ```
 
     → capture du résultat « OK ».
